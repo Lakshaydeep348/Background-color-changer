@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG CHANGER</title>
+    <style>
+        header
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            border: 1px solid black;
+        }
+        #white
+        {
+            background-color: #ffffff;
+        }
+        #black
+        {
+            background-color: #000000;
+        }
+        .btn
+        {
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+        }
+        .button
+        {
+            margin-left: 60vw;
+        }
+        .content
+        {
+            border: 1px solid black;
+            min-height: 80vh;
+        }
+        p
+        {
+            margin: 0px 10px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <header>
+
+        <div> <h1>ABOUT US</h1></div>
+
+        <div class="button">
+            <span><button class="btn" id="white" onclick="changeBG('#ffffff')"></button></span>
+             <span><button class="btn" id="black" onclick="changeBG('#000000')"></button></span>
+        </div>
+
+    </div>
+    </header>
+     <div class="content">
+        <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur exercitationem iure quae doloribus, repellat sit culpa! Aliquam pariatur error fugiat eos nesciunt, delectus porro nisi esse aspernatur quibusdam atque facilis consequatur fugit debitis incidunt ratione recusandae est beatae, quae praesentium blanditiis tempora perferendis assumenda doloremque. Modi illum a reprehenderit, repudiandae dolorem nesciunt cupiditate perspiciatis nobis iste eligendi cumque, in asperiores ab quia quasi. Cum aperiam, laboriosam nam velit tempora sapiente aut illum similique esse libero sint cumque deserunt officiis iure veritatis facere suscipit quos id excepturi, dolore quam, dolores ex. Tenetur sit quam at odit, vitae exercitationem incidunt. Omnis obcaecati ullam iusto consequatur fuga sunt fugit in recusandae, corrupti adipisci est reiciendis alias unde! Ea deleniti ut suscipit eligendi, quam culpa corporis laboriosam eum reprehenderit veritatis. Explicabo illum nostrum, odio blanditiis amet exercitationem tenetur eligendi corrupti at, cumque accusantium a minima, praesentium sed ex ducimus. Assumenda et magnam excepturi pariatur at sit cupiditate omnis, necessitatibus, quas est minima! Deleniti dolorum dignissimos hic dolor, vero officiis praesentium tempore at, aliquam architecto excepturi consequuntur minima laborum aperiam repellat! Tempore nesciunt consequuntur, hic asperiores tempora necessitatibus accusantium alias sit, sint, earum ab iusto enim. Omnis delectus reprehenderit asperiores blanditiis ad labore deserunt nesciunt.
+        </p>
+      </div>
+      <script>
+            function changeBG(color){
+                if(color=="#000000")
+                {
+                    document.body.style.color ='#ffffff';
+                }
+                else 
+                {
+                    document.body.style.color ='#000000';
+                }
+                document.body.style.backgroundColor =color;
+                console.log("im color")
+            }
+
+      </script>
+</body>
+</html>
